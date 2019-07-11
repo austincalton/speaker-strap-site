@@ -1,5 +1,9 @@
 /* Core Styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +25,21 @@ h1, h2, h3 {
     padding: 1em 0;
 }
 
+h1 {
+    margin-bottom: 5rem;
+}
+
+.and {
+    font-size: 1.5rem;
+}
+
+.about-title {
+    padding: 0.5rem;
+    border-bottom: solid;
+    border-color: #28C3D4;
+    border-width: 0.02rem;
+}
+
 p {
     margin: 0;
     padding: 1em 0;
@@ -37,7 +56,7 @@ p {
 }
 
 .btn:hover {
-    background: #eaeaea;
+    background: #fff;
     color: #333;
 }
 
@@ -65,6 +84,12 @@ p {
 #showcase h1 {
     padding-top: 100px;
     padding-bottom: 0;
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+}
+
+.blue-s {
+    color: #28C3D4;
 }
 
 #showcase .content-wrap,
@@ -87,6 +112,20 @@ p {
     padding: 2em 1em 1em;
 }
 
+#section-b a {
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    color: #333;
+    font-size: 2rem;
+}
+
+#section-b p {
+    border-top: solid;
+    border-color: #333;
+    border-width: 0.03rem;
+    padding: 0.5rem;
+}
+
 #section-b ul {
     list-style: none;
     margin: 0;
@@ -103,13 +142,34 @@ p {
     padding: 1.5em;
 }
 
+.card-title:hover {
+    background: lightgrey;
+}
+
 /* Section C */
 
 #section-c {
-    background: #fff;
-    color: #333;
-    padding: 2em;
+    background: #aee7e8;
+    color: #fff;
+    padding: 3em;
 }
+
+.btn2 {
+    display: inline-block;
+    background: #fff;
+    color: #aee7e8;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: none;
+    margin: .5em 0;
+}
+
+.btn2 a {
+    text-decoration: none;
+    color: #aee7e8;
+}
+
 
 /* Section D / Boxes */
 
@@ -119,20 +179,27 @@ p {
 }
 
 #section-d .box:first-child {
-    background: #2690d4;
+    background: #248ea9;
+    border-right: solid #fff;
+    border-top: solid #fff;
+}
+
+#section-d .box:last-child {
+    background: #248ea9;
+    border-bottom: solid #fff;
 }
 
 /* Footer */
 
 #main-footer {
     padding: 2em;
-    background: #000;
+    background: #333;
     color: #fff;
     text-align: center;
 }
 
 #main-footer a {
-    color: #2690d4;
+    color: #28c3d4;
     text-decoration: none;
 }
 
@@ -145,8 +212,7 @@ p {
     }
 
     #section-a .content-text {
-        columns: 2;
-        column-gap: 2em;
+        
     }
 
     #section-a .content-text p {
