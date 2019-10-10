@@ -12,6 +12,7 @@ body {
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
+    overflow-x: hidden;
 }
 
 img {
@@ -203,6 +204,20 @@ p {
     text-decoration: none;
 }
 
+#renny {
+    background-color: #333;
+    border: solid 2px #fff;
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 2vh;
+    border-radius: 15px;
+}
+#renny:hover {
+        cursor: pointer;
+        background: #fff;
+        color: #333;
+}
+
 /*  Media Query */
 
 @media(min-width: 700px) {
@@ -237,5 +252,18 @@ p {
     #section-b li {
         width: 31%;
     }
+}
 
+/*  Media Query */
+
+@media(max-width: 699px) {
+    
+    #section-d .box {
+        border: solid 3px #fff;
+        border-bottom: none;
+    }
+
+    #crafted {
+        margin-top: 2vh;
+    }
 }
